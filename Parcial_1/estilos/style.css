@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Changa One", sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 0, 71);
+    background-image: url(/images/bck.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.card-register {
+    background-color: rgba(20, 15, 35, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 30px 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.contenedor1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor1 h1 {
+    font-size: 40px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    padding: 10px;
+}
+
+.contenedor1 h2 {
+    font-size: 17px;
+    color: #ddd;
+    font-weight: normal;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="password"],
+.register input[type="tel"],
+.register select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #8a2be2;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #a040f0;
+    transform: translateY(-8px) scale(1.08);
+}
+
+.card-login {
+    background-color: rgba(20, 15, 35, 0.75);
+    border-radius: 25px;
+    padding: 30px 40px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.5);
+    color: white;
+}
+
+.contenedor2 h1 {
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    padding: 10px;
+}
+
+.contenedor2 h2 {
+    font-size: 17px;
+    text-shadow: 2px 2px 2px black;
+}
+
+.contenedor2 {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.input-group label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+.login input[type="text"],
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="tel"],
+.login select {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+}
+
+.text-nextpage {
+    margin: 5px;
+    padding: 1px;
+}
