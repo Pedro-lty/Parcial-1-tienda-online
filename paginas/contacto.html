@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="/estilos/style-contacto.css">
+    <link rel="stylesheet" href="/estilos/style-header.css">
+    <link rel="stylesheet" href="/estilos/style-footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.css" integrity="sha512-FA9cIbtlP61W0PRtX36P6CGRy0vZs0C2Uw26Q1cMmj3xwhftftymr0sj8/YeezDnRwL9wtWw8ZwtCiTDXlXGjQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="/images/favicon.webp">
+    
+    <link rel="icon" href="/images/favicon.webp">
+</head>
+<body>
+    <header id="header">
+        <div class="header-content">
+            <a href="/inicio.html" class="NeonFoxGaming">Neon Fox Gaming</a>
+            <nav class="nav-links">
+                <a href="/inicio.html">Inicio</a>
+                <a href="/paginas/lista-productos.html">Productos</a>
+                <a href="/paginas/nosotros.html">Nosotros</a>
+                <a href="/paginas/blogs.html">Blogs</a>
+                <a href="/paginas/contacto.html">Contactos</a>
+            </nav>
+            <p>Carrito</p>
+                <div class="btn-login">
+                    <a href="/paginas/login.html" class="text-nextpage">Iniciar Sesion</a>
+                </div>
+        </div>
+    </header>
+
+    <br>
+    <main>
+    <section class="form-wrapper">
+        <div class="form-header">
+            <h2>FORMULARIO DE CONTACTOS</h2>
+        </div>
+            
+        <!-- Se agrega el id="miFormulario" -->
+        <form id="miFormulario" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">NOMBRE COMPLETO</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+
+            <div class="form-group">
+                <label for="correo">CORREO</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div class="form-group">
+                <label for="contenido">CONTENIDO</label>
+                <textarea id="contenido" name="contenido" rows="5" required></textarea>
+            </div>
+
+            <div class="button-container">
+                <!-- Se cambia type="submit" por type="button" y se añade onclick -->
+                <button type="button" class="submit-btn" onclick="enviarMensaje()">ENVIAR MENSAJE</button>
+            </div>
+        </form>
+    </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <div class="footer-links">
+                    <h4>Ayuda</h4>
+                    <ul>
+                        <li>Centro de ayuda</li>
+                        <li>Seguimiento de mi compra</li>
+                        <li>Formulario de contacto</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Nosotros</h4>
+                    <ul>
+                        <li>Quienes somos</li>
+                        <li>Ventas coporativas</li>
+                        <li>Terminos y condiciones</li>
+                        <li>Politicas y seguridad</li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Siguenos</h4>
+                    <div class="social-link">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/scripts/scriptContacto.js"></script>
+</html>

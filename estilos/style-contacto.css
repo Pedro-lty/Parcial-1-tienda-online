@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+* {
+    font-family: "Changa One", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(/images/background-2.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cart-area {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.main-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-section h2 {
+    margin-bottom: 20px;
+}
+
+.Tienda {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Marca superior y marco con equis del wireframe */
+.brand-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image-placeholder {
+    width: 180px;
+    height: 100px;
+    border: 2px solid #ffffff;
+    margin: 0 auto 15px auto;
+    position: relative;
+    background-color: #00003b;
+}
+
+.cross-line {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    top: 50%;
+    left: 0;
+}
+
+.line-1 {
+    transform: rotate(28deg);
+}
+
+.line-2 {
+    transform: rotate(-28deg);
+}
+
+.brand-header h2 {
+    font-size: 1.8rem;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Contenedor del Formulario */
+.form-wrapper {
+    background-color: #312046;
+    border: 2px solid #72369f;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    max-height: 700px;
+    margin: 0 auto;
+}
+
+.form-header {
+    background-color: #6d3188;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #6d3188;
+}
+
+.form-header h2 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.contact-form {
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 2px solid #6d3188;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #000000;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #9a2ccd;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #8a2be2;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+@media(hover: hover) {
+    .submit-btn:hover {
+        background-color: #a040f0;
+        transform: translateY(-2px);
+    }
+}
+
+/* Media Queries para pantallas hasta 768px */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .main-container {
+        padding: 15px;
+    }
+}

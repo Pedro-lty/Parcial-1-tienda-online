@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Changa One", sans-serif;
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(71, 0, 71);
+    background-image: url('/images/bck.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px; 
+}
+
+.card-register,
+.card-login {
+    background-color: rgba(20, 15, 35, 0.75);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 25px;
+    padding: 25px 20px;
+    max-width: 450px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.contenedor1,
+.contenedor2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedor1 h1,
+.contenedor2 h1 {
+    font-size: clamp(30px, 5vw, 40px);
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    padding: 5px;
+}
+
+.contenedor1 h2,
+.contenedor2 h2 {
+    font-size: 16px;
+    color: #ddd;
+    font-weight: normal;
+    text-shadow: 1px 1px 2px black;
+}
+
+.input-group {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    color: #f0f0f0;
+}
+
+.card-register input[type="text"],
+.card-register input[type="email"],
+.card-register input[type="password"],
+.card-register input[type="tel"],
+.card-register select,
+.card-login input[type="text"],
+.card-login input[type="email"],
+.card-login input[type="password"],
+.card-login input[type="tel"],
+.card-login select {
+    width: 100%;
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+    font-family: inherit;
+    background-color: #ffffff;
+    color: #858383;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #8a2be2;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+@media (hover: hover) {
+    .btn-submit:hover {
+        background-color: #a040f0;
+        transform: translateY(-2px);
+    }
+}
+
+.card-login p,
+.card-register p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.text-nextpage {
+    color: #a040f0;
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+.btn-inicio a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn-inicio {
+    position: absolute;
+    background-color: #8a2be2;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: white;
+    top: 15px;
+    left: 10px;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+@media (hover: hover) {
+    .btn-inicio:hover {
+        background-color: #a040f0;
+        transform: translateY(-2px);
+    }
+}
+
+@media (min-width: 480px) {
+    .card-register,
+    .card-login {
+        padding: 30px 40px;
+    }
+}

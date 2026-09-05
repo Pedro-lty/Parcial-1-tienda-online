@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Changa One", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #312046;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Layout General del Contenedor Principal */
+.main-container {
+    max-width: 1100px;
+    width: 90%;
+    margin: 40px auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Secciones Generales */
+.hero-section, 
+.info-section, 
+.gif-section {
+    background-color: rgba(20, 15, 35, 0.75);
+    backdrop-filter: blur(8px);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/* Tipografía */
+h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #e0aaff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+h3 {
+    font-size: 24px;
+    margin: 20px 0 10px 0;
+    color: #c77dff;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+/* Lista de ¿Por qué elegirnos? */
+.info-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+    display: inline-block;
+}
+
+.info-section li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.info-section li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #9d4edd;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}

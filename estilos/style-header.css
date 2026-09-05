@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    width: 100%;
+    background-color: rgba(47, 36, 82, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    width: 100%;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.NeonFoxGaming {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    font-family: "Changa One", sans-serif;
+}
+
+.nav-links {
+    font-family: "Changa One", sans-serif;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #a040f0;
+}
+
+.header-acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+#header p {
+    font-family: "Changa One", sans-serif;
+    color: white;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+.text-nextpage {
+    background-color: #8a2be2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+    font-family: "Changa One", sans-serif;
+}
+
+.text-nextpage:hover {
+    background-color: #a040f0;
+}
